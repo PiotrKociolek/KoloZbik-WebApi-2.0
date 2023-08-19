@@ -1,5 +1,7 @@
+import HistoryCardFull from "@/app/_components/historyCardFull";
+
 const History = ()=>{
-    return <>Historia</>
+    return <div><HistoryCardFull/></div>
 }
 
 export default History

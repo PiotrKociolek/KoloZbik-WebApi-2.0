@@ -1,5 +1,11 @@
+import HistoryCardShort from "@/app/_components/historyCardShort";
+
 const Dashboard = () => {
-    return <div className="bg-amber-300">DASHBOARD</div>
+    return <div>
+
+        <HistoryCardShort/>
+    </div>
+
 }
 
 export default Dashboard

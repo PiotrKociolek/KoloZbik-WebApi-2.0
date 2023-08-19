@@ -16,12 +16,17 @@
   }
 }
 
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb)); /* Kolor tekstu */
+  background-color: rgb(var(--background-start-rgb)); /* Kolor tła */
+}
+
+/* globals.css */
+.background {
+  background-color: beige; /* kolor strony */
+}
+
+.founders{ /*zalozyciele zdjecie*/
+
 }

@@ -12,7 +12,7 @@ const ZbikNavbar = () => {
     const isRouteActive = (route: string): boolean => {
         return router.pathname === route
     }
-    //const isNavToggleClicked = ():boolean =>{}
+
     return <Navbar isCompact isBordered variant="sticky">
         <Navbar.Brand>
             <Text b color="inherit" hideIn="xs">
@@ -21,7 +21,7 @@ const ZbikNavbar = () => {
         </Navbar.Brand>
         <Navbar.Content hideIn="xs" variant="underline">
             <Navbar.Link isActive={isRouteActive("/dashboard")} href="/dashboard">Strona Główna</Navbar.Link>
-            <Navbar.Link isActive={isRouteActive("/history")} href="/gallery">Historia</Navbar.Link>
+            <Navbar.Link isActive={isRouteActive("/history")} href="/history">Historia</Navbar.Link>
             <Navbar.Link isActive={isRouteActive("/blog")} href="/blog">Aktualności</Navbar.Link>
             <Navbar.Link isActive={isRouteActive("/gallery")} href="/gallery">Galeria</Navbar.Link>
             <Navbar.Link isActive={isRouteActive("/management")} href="/management">Zarząd</Navbar.Link>
