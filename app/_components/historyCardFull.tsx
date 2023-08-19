@@ -8,7 +8,7 @@ const HistoryCardFull = () => {
         <Card style={{width: '18rem'}}>
             <Card.Img variant="top" src="/zalozyciele.svg"/>
             <Card.Body>
-                <Card.Title>Historia Koła</Card.Title>
+                <Card.Title style={{ color: 'black' }}>Historia Koła</Card.Title>
                 <Card.Text  style={{ color: 'black' }}>
                     Gdy milkną wystrzały przesuwającego się na zachód frontu, sądeccy myśliwi zaczynają się grupować z
                     myślą o możliwości wydzierżawienia obwodów łowieckich.
