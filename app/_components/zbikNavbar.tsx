@@ -2,6 +2,7 @@
 import {Button, Link, Navbar, Text,Dropdown} from '@nextui-org/react'
 import {useState} from "react";
 import {useRouter} from "next/navigation";
+import NavbarItem from "@nextui-org/react/types/navbar/navbar-item";
 
 
 const ZbikNavbar = () => {
@@ -20,14 +21,16 @@ const ZbikNavbar = () => {
         </Navbar.Brand>
         <Navbar.Content hideIn="xs" variant="underline">
             <Navbar.Link isActive={isRouteActive("/dashboard")} href="/dashboard">Strona Główna</Navbar.Link>
+            <Navbar.Link isActive={isRouteActive("/history")} href="/gallery">Historia</Navbar.Link>
             <Navbar.Link isActive={isRouteActive("/blog")} href="/blog">Aktualności</Navbar.Link>
             <Navbar.Link isActive={isRouteActive("/gallery")} href="/gallery">Galeria</Navbar.Link>
             <Navbar.Link isActive={isRouteActive("/management")} href="/management">Zarząd</Navbar.Link>
             <Navbar.Link isActive={isRouteActive("/contact")} href="/contact">Kontakt</Navbar.Link>
         </Navbar.Content>
+        <Navbar.Content>
 
 
-
+        </Navbar.Content>
 
 
         <Navbar.Content>
