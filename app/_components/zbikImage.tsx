@@ -1,18 +1,13 @@
 'use client'
 import React from "react";
-import {Image} from "@nextui-org/react";
+import {Image} from 'react-bootstrap';
 
 
 
-const ZbikImage () => {
-    return (
-        <Image
-            width={300}
-            height={200}
-            alt="NextUI hero Image with delay"
-            src=""
-        />
-    );
+
+const ZbikImage = () => {
+     return <Image src="example.jpeg"  fluid />;
+
 }
 
-export default ZbikImage
+export default ZbikImage;
