@@ -1,7 +1,7 @@
 "use client"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-
+//xD
 const FooCard =()=>{
     return (
         <Card style={{ width: '18rem' }}>
