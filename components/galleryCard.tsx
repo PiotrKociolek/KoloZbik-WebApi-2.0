@@ -1,8 +1,7 @@
 "use client"
 import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
 
-const NewsCard =()=>{
-
+const GalleryCard =()=>{
     return(
         <Card
             shadow="sm"
@@ -17,7 +16,7 @@ const NewsCard =()=>{
                     width="100%"
                     alt=""
                     className="w-full object-cover h-48"
-                    src="/jelen.jpg"
+                    src="/dzik.jpg" // Dodaj ścieżkę do obrazu dzik.jpg
                 />
             </CardBody>
             <CardFooter className="p-4">
@@ -25,17 +24,18 @@ const NewsCard =()=>{
                     <div>
                         <b className="text-lg font-semibold">Tytuł</b>
                         <p className="text-sm text-gray-500">
-                            Polowanie na jelenie to aktywność, która od wieków przyciąga zarówno miłośników przyrody, jak i pasjonatów łowiectwa. To nie tylko fascynująca forma spędzania czasu na świeżym powietrzu, ale również ważne narzędzie w zarządzaniu populacją jeleni i ochrony ekosystemów leśnych.
+                            To jest opis galerii
                         </p>
                     </div>
                     <div>
-                        <button className="text-blue-500 hover:underline">Czytaj więcej</button>
+                        <button className="text-blue-500 hover:underline">Przeglądaj galerie</button>
                     </div>
                 </div>
 
             </CardFooter>
         </Card>
 
-    );
+
+    )
 }
-export default NewsCard
+export default GalleryCard

@@ -1,10 +1,13 @@
 "use client"
 import ZbikNavbar from "@/components/zbikNavbar";
-
-const management = () => {
+import ManagementSection from "@/components/managementSection";
+const Management = () => {
     return (
+        <div>
         <ZbikNavbar/>
+        <ManagementSection/>
+        </div>
     );
 };
 
-export default management;
+export default Management;

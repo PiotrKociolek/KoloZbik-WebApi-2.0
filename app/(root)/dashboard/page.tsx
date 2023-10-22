@@ -1,18 +1,28 @@
 "use client"
-import ZbikNavbar from "@/components/zbikNavbar";
-import ZbikImage from "@/components/zbikImage";
+import ZbikBgImage from "@/components/zbikBgImage";
 import React from "react";
+import HistoryCardShort from "@/components/historyCardShort";
+import {Navbar} from "@nextui-org/react";
+import ZbikNavbar from "@/components/zbikNavbar";
+import GridNewsDashboard from "@/components/GridNewsDashboard";
+import AdminNavbar from "@/components/adminNavbar";
 
 
 const Dashboard = () => {
     return (
-
-    <div className="full-page-image">
-        <ZbikNavbar/>
-        <img src="/cuteCat.jpg" alt="" />
-    </div>
-
-
+        <div>
+            <ZbikNavbar />
+            <div className="grid gap-3 grid-cols-1 grid-rows-2">
+                <div className="row-start-1 row-span-1">
+                    <ZbikBgImage />
+                </div>
+                <div className="row-start-2 row-span-1">
+                    <GridNewsDashboard />
+                <h1 className="opacity-0">_____________________________</h1>
+                    <HistoryCardShort />
+                </div>
+            </div>
+        </div>
     );
 };
 

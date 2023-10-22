@@ -1,11 +1,16 @@
 "use client"
 import ZbikNavbar from "@/components/zbikNavbar";
-import {Habibi} from "next/dist/compiled/@next/font/dist/google";
+import HistoryCardFull from "@/components/histroyCardFull";
 
 const history = () => {
     return (
-        <ZbikNavbar/>
+        <div>
+            <ZbikNavbar/>
+        <div>
 
+        <HistoryCardFull/>
+        </div>
+        </div>
     );
 };
 
