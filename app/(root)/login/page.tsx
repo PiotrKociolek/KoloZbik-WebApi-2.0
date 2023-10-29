@@ -5,7 +5,6 @@ import LoginPanel from "@/components/loginPanel"
 const Login = () => {
     return (
         <div>
-        <LoginBgImage/>
         <LoginPanel/>
         </div>
     );

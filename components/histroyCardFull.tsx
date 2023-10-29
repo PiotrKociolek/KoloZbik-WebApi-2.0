@@ -4,6 +4,7 @@ import {CardHeader} from "@nextui-org/card";
 
 const historyCardFull =()=>{
     return(
+        <div>
         <Card className="shadow-md rounded-lg p-4 m-4">
             <CardHeader className="text-center">Historia Koła Żbik</CardHeader>
             <CardBody className="p-4">
@@ -44,7 +45,7 @@ const historyCardFull =()=>{
                 <p className="text-center text-gray-500 mt-2">Założyciele Koła Żbik</p>
             </CardBody>
         </Card>
-
+        </div>
 
 
     );

@@ -25,10 +25,6 @@ return(
             </CardBody>
         </div>
     </Card>
-
-
-
-
 )
 }
 export default historyShort

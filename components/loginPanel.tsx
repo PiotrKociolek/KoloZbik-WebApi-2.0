@@ -1,5 +1,6 @@
 'use client'
 import {Button, Input} from "@nextui-org/react";
+import LoginBgImage from "@/components/loginBgImage";
 
 
 const LoginPanel = () => {
@@ -7,6 +8,7 @@ const LoginPanel = () => {
 
     return (
         <div className="h-screen w-full flex items-center justify-center">
+            <LoginBgImage />
             <div className="absolute inset-0 flex items-center justify-center">
                 <div className="bg-opacity-75 bg-gray-800 p-6 rounded-lg text-center">
                     <div className="mx-auto max-w-xs">

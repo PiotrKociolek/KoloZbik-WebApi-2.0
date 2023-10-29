@@ -4,6 +4,7 @@ import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
 const NewsCard =()=>{
 
     return(
+        <div>
         <Card
             shadow="sm"
             isPressable
@@ -35,7 +36,7 @@ const NewsCard =()=>{
 
             </CardFooter>
         </Card>
-
+        </div>
     );
 }
 export default NewsCard

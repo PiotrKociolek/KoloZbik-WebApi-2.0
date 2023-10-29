@@ -6,6 +6,7 @@ import {Navbar} from "@nextui-org/react";
 import ZbikNavbar from "@/components/zbikNavbar";
 import GridNewsDashboard from "@/components/GridNewsDashboard";
 import AdminNavbar from "@/components/adminNavbar";
+import Footer from "@/components/footer";
 
 
 const Dashboard = () => {
@@ -20,6 +21,7 @@ const Dashboard = () => {
                     <GridNewsDashboard />
                 <h1 className="opacity-0">_____________________________</h1>
                     <HistoryCardShort />
+                    <Footer/>
                 </div>
             </div>
         </div>
