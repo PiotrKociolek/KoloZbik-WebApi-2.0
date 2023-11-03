@@ -16,6 +16,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundColor: {
+        'green': '#00FF00', // Set 'green' background color to green (#00FF00)
+      },
     },
   },
   plugins: [nextui()],

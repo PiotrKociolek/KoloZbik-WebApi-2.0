@@ -7,10 +7,11 @@ export interface ProvidersProps {
     children: React.ReactNode;
     themeProps?: ThemeProviderProps;
 }
+//attribute="class" defaultTheme="dark"
 export function Providers({ children, themeProps }: ProvidersProps) {
     return (
         <NextUIProvider>
-            <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+            <NextThemesProvider {...themeProps} >{children}</NextThemesProvider>
         </NextUIProvider>
     )
 }

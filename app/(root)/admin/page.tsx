@@ -1,10 +1,14 @@
 "use client"
 
 import ZbikNavbar from "@/components/zbikNavbar";
+import UserPanel from "@/components/UserPanel";
 
 const AdminPanel =()=>{
     return(
-        <ZbikNavbar/>
+        <div>
+            <ZbikNavbar/>
+            <UserPanel/>
+        </div>
 
     )
 }

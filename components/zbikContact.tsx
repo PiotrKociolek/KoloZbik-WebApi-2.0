@@ -15,12 +15,15 @@ const ZbikContact =()=>{
                     <p className="text-lg font-semibold mt-4 mb-2">Konto bankowe:</p>
                     <p className="text-gray-600">1234 5678 9012 3456 7890 1234</p>
                     <p className="text-lg font-semibold mt-4 mb-2">Kontakt z Zarządem w sekcji zarząd:</p>
-                    <Button
+
+                    <a href="/management">
+                        <Button
                         color="primary"
                         variant="ghost"
                     >
                         Przejdź do Zarządu
                     </Button>
+                    </a>
                 </CardBody>
             </Card>
         </div>

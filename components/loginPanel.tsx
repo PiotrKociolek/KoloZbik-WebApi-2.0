@@ -23,7 +23,9 @@ const LoginPanel = () => {
                             description="podaj swoje hasło"
                         />
                         <Button className="mt-4 block">Zaloguj</Button>
-                        <Button className="mt-2 block">Zresetuj Hasło</Button>
+                        <a href="/resetPassword">
+                            <Button className="mt-2 block">Zresetuj Hasło</Button>
+                        </a>
                     </div>
                 </div>
             </div>

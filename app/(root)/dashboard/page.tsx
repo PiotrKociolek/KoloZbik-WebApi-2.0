@@ -11,7 +11,7 @@ import Footer from "@/components/footer";
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className="">
             <ZbikNavbar />
             <div className="grid gap-3 grid-cols-1 grid-rows-2">
                 <div className="row-start-1 row-span-1">
