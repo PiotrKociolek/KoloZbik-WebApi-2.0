@@ -16,7 +16,7 @@ const GalleryCard =()=>{
                     width="100%"
                     alt=""
                     className="w-full object-cover h-48"
-                    src="/dzik.jpg" // Dodaj ścieżkę do obrazu dzik.jpg
+                    src="/dzik.jpg"
                 />
             </CardBody>
             <CardFooter className="p-4">

@@ -1,6 +1,7 @@
 "use client"
 import {Card, CardBody, CardHeader, Image} from "@nextui-org/react";
 import ManagementCard from "@/components/ManagemenetCard";
+import RewizyjnaCard from "@/components/komisjaRewizyjna";
 
 const ManagementSection = () => {
     return (

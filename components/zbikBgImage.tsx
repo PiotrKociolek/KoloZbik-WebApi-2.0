@@ -4,7 +4,10 @@ import React from "react";
 import {Image} from "@nextui-org/react";
 const ZbikBgImage =()=>{
 
-    return(<img className="w-full h-full object-cover" src="/zbik.png" alt="" />
+    return(
+        <div className="flex items-center justify-center h-720">
+            <img className="object-fill w-240" src="/zbik.webp" alt=""/>
+        </div>
 
 
     )
