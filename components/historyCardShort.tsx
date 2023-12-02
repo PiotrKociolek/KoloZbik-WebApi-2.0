@@ -20,7 +20,7 @@ return(
                     Jan Łoboda...
                 </p>
                 <div className="mt-2 text-center">
-                    <Button color="success" href={"/history"}>Czytaj Więcej</Button>
+                    <Button color="success" href="/history">Czytaj Więcej</Button>
                 </div>
             </CardBody>
         </div>

@@ -11,21 +11,13 @@ const News = () => {
 
 
 
-                <Button className="text-green-600 hover:underline mb-4">Dodaj</Button>
+                <Button className="text-green-600 hover:underline mb-4 opacity-0">Dodaj</Button>
 
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-                <NewsCard />
-                <NewsCard />
-                <NewsCard />
-                <NewsCard />
-                <NewsCard />
-                <NewsCard />
-                <NewsCard />
-                <NewsCard />
-                <NewsCard />
+
             </div>
-            <div className="flex justify-center my-4">
+            <div className="flex justify-center my-4 opacity-0">
                 <PaginationComponent />
             </div>
         </div>
