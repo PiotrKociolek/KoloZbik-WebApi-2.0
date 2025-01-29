@@ -1,0 +1,26 @@
+version: '3'
+services:
+  web:
+    image: node:14-alpine
+    working_dir: /app
+    command: >
+      sh -c "npm install && npm run build && npm start"
+    volumes:
+      - ./app:/app
+    ports:
+      - "3000:3000"
+    environment:
+      VIRTUAL_HOST: zbiknowysacz.pl
+      LETSENCRYPT_HOST: zbiknowysacz.pl
+      LETSENCRYPT_EMAIL: kolozbik1948@gmail.com
+
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt

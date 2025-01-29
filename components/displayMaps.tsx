@@ -5,7 +5,6 @@ import MapCard from "@/components/MapCard";
 const DisplayMaps =()=>{
     return(
         <div>
-           <MapCard/>
             <MapCard/>
         </div>
     )

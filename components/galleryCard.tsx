@@ -1,12 +1,29 @@
-"use client"
-import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
+import React from "react";
+import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 
-const GalleryCard =()=>{
-    return(
+interface GalleryCardProps {
+    title: string;
+    galleryKey: string;  // Zmieniamy 'key' na 'galleryKey'
+    obfuscatedFileName: string;
+    fileExtension: string;
+}
+
+const GalleryCard: React.FC<GalleryCardProps> = ({ title, galleryKey, obfuscatedFileName, fileExtension }) => {
+    const router = useRouter();
+    const imageUrl = obfuscatedFileName
+        ? `${process.env.NEXT_PUBLIC_API_URL || ""}/uploads/${obfuscatedFileName}.${fileExtension}`
+        : "./dzik.jpg";  // Default image in case there is no miniature
+
+    const handleNavigate = () => {
+        router.push(`/gallery/${galleryKey}`);  // Przekierowanie na stronę galerii, używamy 'galleryKey'
+    };
+
+    return (
         <Card
             shadow="sm"
             isPressable
-            onPress={() => console.log("item pressed")}
+            onPress={handleNavigate}  // Przekierowanie po kliknięciu na całą kartę
             className="rounded-lg overflow-hidden"
         >
             <CardBody className="p-0">
@@ -14,28 +31,23 @@ const GalleryCard =()=>{
                     shadow="sm"
                     radius="lg"
                     width="100%"
-                    alt=""
+                    alt={title}
                     className="w-full object-cover h-48"
-                    src="/dzik.jpg" // Dodaj ścieżkę do obrazu dzik.jpg
+                    src={imageUrl}
                 />
             </CardBody>
             <CardFooter className="p-4">
                 <div>
+                    <b className="text-lg font-semibold">{title}</b>
                     <div>
-                        <b className="text-lg font-semibold">Tytuł</b>
-                        <p className="text-sm text-gray-500">
-                            To jest opis galerii
-                        </p>
-                    </div>
-                    <div>
-                        <button className="text-blue-500 hover:underline">Przeglądaj galerie</button>
+                        <button className="text-blue-500 hover:underline mt-2" onClick={handleNavigate}>
+                            Przeglądaj galerie
+                        </button>
                     </div>
                 </div>
-
             </CardFooter>
         </Card>
+    );
+};
 
-
-    )
-}
-export default GalleryCard
+export default GalleryCard;

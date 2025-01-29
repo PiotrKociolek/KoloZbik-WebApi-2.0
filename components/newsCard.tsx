@@ -1,42 +1,50 @@
 "use client"
-import {Card, CardBody, CardFooter, Image} from "@nextui-org/react";
+import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
+import React from "react";
+import { useRouter } from "next/navigation";
 
-const NewsCard =()=>{
+const NewsCard = () => {
+    const router = useRouter();
 
-    return(
-        <div>
+    // Stałe dane
+    const title = "Tytuł artykułu";
+    const imageUrl = "/jelen.jpg"; // Ścieżka do obrazu
+    const handleNavigate = () => {
+        router.push("/news");  // Tutaj możemy dodać, na jaką stronę ma prowadzić kliknięcie
+    };
+
+    return (
         <Card
             shadow="sm"
             isPressable
-            onPress={() => console.log("item pressed")}
-            className="rounded-lg overflow-hidden"
+            onPress={handleNavigate}  // Przekierowanie po kliknięciu na całą kartę
+            className="rounded-lg overflow-hidden bg-gray-800"
         >
             <CardBody className="p-0">
                 <Image
                     shadow="sm"
                     radius="lg"
                     width="100%"
-                    alt=""
+                    alt={title}
                     className="w-full object-cover h-48"
-                    src="/jelen.jpg"
+                    src={imageUrl}
                 />
             </CardBody>
             <CardFooter className="p-4">
                 <div>
+                    <b className="text-lg font-semibold text-white">{title}</b>  {/* Tylko tytuł */}
                     <div>
-                        <b className="text-lg font-semibold">Tytuł</b>
-                        <p className="text-sm text-gray-500">
-                            Polowanie na jelenie to aktywność, która od wieków przyciąga zarówno miłośników przyrody, jak i pasjonatów łowiectwa. To nie tylko fascynująca forma spędzania czasu na świeżym powietrzu, ale również ważne narzędzie w zarządzaniu populacją jeleni i ochrony ekosystemów leśnych.
-                        </p>
-                    </div>
-                    <div>
-                        <button className="text-blue-500 hover:underline">Czytaj więcej</button>
+                        <button
+                            className="text-blue-500 hover:underline mt-2"
+                            onClick={handleNavigate}
+                        >
+                            Czytaj więcej
+                        </button>
                     </div>
                 </div>
-
             </CardFooter>
         </Card>
-        </div>
     );
 }
-export default NewsCard
+
+export default NewsCard;

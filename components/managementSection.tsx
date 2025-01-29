@@ -1,21 +1,11 @@
 "use client"
-import {Card, CardBody, CardHeader, Image} from "@nextui-org/react";
+import { Card, CardBody, CardHeader, Image } from "@nextui-org/react";
 import ManagementCard from "@/components/ManagemenetCard";
 
 const ManagementSection = () => {
     return (
         <div>
-            <></>
-            <h3 style={{ textAlign: 'center' }}>Zarząd Koła</h3>
-            <ManagementCard />
-            <ManagementCard />
-            <ManagementCard />
-            <ManagementCard />
-            <ManagementCard />
-
-            <h3 style={{ textAlign: 'center' }}>Komisja Rewizyjna</h3>
-            <ManagementCard />
-            <ManagementCard />
+            <h1 className="text-4xl text-center text-amber-200">Zarząd Koła</h1>
             <ManagementCard />
         </div>
     );

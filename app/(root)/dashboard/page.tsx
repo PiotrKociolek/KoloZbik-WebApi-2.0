@@ -8,7 +8,6 @@ import GridNewsDashboard from "@/components/GridNewsDashboard";
 import AdminNavbar from "@/components/adminNavbar";
 import Footer from "@/components/footer";
 
-
 const Dashboard = () => {
     return (
         <div className="">
@@ -18,10 +17,13 @@ const Dashboard = () => {
                     <ZbikBgImage />
                 </div>
                 <div className="row-start-2 row-span-1">
-                    <GridNewsDashboard />
-                <h1 className="opacity-0">_____________________________</h1>
+                    {/* GridNewsDashboard zajmujący pełną szerokość ekranu */}
+                    <div className="w-full">
+                        <GridNewsDashboard />
+                    </div>
+                    <h1 className="opacity-0">_____________________________</h1>
                     <HistoryCardShort />
-                    <Footer/>
+                    <Footer />
                 </div>
             </div>
         </div>
